@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "LinkedIn Feed Blocker",
+  "version": "1.0",
+  "description": "Hides the LinkedIn home feed to reduce distraction while keeping the rest of LinkedIn usable.",
+  "content_scripts": [
+    {
+      "matches": ["https://www.linkedin.com/feed/*"],
+      "js": ["content.js"],
+      "css": ["block.css"],
+      "run_at": "document_start"
+    }
+  ]
+}
